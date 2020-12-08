@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --line-border-fill : #3498db;
+    --line-border-empty: #e0e0e0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #eee
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    position: relative;
+}
+.progress-container:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:0;
+    /* transform: translate(0,-50%); */
+    transform: translateY(-50%);
+    background-color: var(--line-border-empty);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+.progress {
+    position: absolute;
+    top: 50%;
+    left:0;
+    /* transform: translate(0,-50%); */
+    transform: translateY(-50%);
+    background-color: var(--line-border-fill);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: width 0.8s ease;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #999;
+    border: 3px solid var(--line-border-empty);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  0.9s ease;
+}
+
+.circle.active {
+    border: 3px solid var(--line-border-fill);
+   
+}
+.btn-container {
+    display: flex;
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:active {
+    transform: scale(0.98);
+}
