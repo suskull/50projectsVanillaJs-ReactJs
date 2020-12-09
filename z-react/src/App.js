@@ -1,10 +1,12 @@
-import './App.css';
+import './App.scss';
 import ProgressSteps from './components/progress-steps';
-import RotatingNavigation from './components/rotating-navigation'
+import RotatingNavigation from './components/rotating-navigation';
+import SearchWidget from './components/search-widget'
+
 function App() {
   return (
     <>
-      <RotatingNavigation />
+      <ProgressSteps />
     </>
   );
 }
