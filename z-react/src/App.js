@@ -1,4 +1,4 @@
-import './App.scss';
+import './App.css';
 import ProgressSteps from './components/progress-steps';
 import RotatingNavigation from './components/rotating-navigation';
 import SearchWidget from './components/search-widget'
@@ -6,7 +6,7 @@ import SearchWidget from './components/search-widget'
 function App() {
   return (
     <>
-      <ProgressSteps />
+      <RotatingNavigation />
     </>
   );
 }

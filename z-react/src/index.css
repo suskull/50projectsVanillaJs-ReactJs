@@ -1,8 +1,10 @@
-  
+@import '../src/components/progress-steps/index.css';
+
 :root {
   --line-border-fill : #3498db;
   --line-border-empty: #e0e0e0;
 }
+/* 
 
 
 * {
@@ -15,14 +17,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  /* background-color: #eee; */
+  align-items: center; 
+  background-color: #eee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@tailwind base;
+
+* {
+  @apply box-border;
 }
 
+body {
+  @apply m-0;
+  /* @apply bg-red-50; */
+  /* @apply h-screen; */
+}
+@tailwind components;
+@tailwind utilities;
+
+
+/* .progress-bar-container:before {
+  @apply absolute h-1 bg-border-empty w-full top-1/2 left-0;
+}
+ */
+
+ .-translate-150-full {
+    transform: translateX(-150%);
+ }
+
+ .-translate-2-full {
+  transform: translateX(-200%);
+}

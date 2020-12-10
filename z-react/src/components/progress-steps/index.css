@@ -1,0 +1,13 @@
+
+  
+.progress-steps-progress-container:before {
+    content: '';
+    background-color: var(--line-border-empty);
+    z-index: -1;
+    @apply absolute top-1/2 -translate-y-1/2 h-1 w-full;
+    
+}
+
+.btn-scale:active {
+    transform: scale(0.98);
+}
