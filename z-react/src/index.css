@@ -55,3 +55,6 @@ body {
  .-translate-2-full {
   transform: translateX(-200%);
 }
+.translate-2-full {
+  transform: translateX(200%);
+}

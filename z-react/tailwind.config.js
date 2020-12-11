@@ -9,11 +9,29 @@ module.exports = {
         '1': '1',
         '999': '999',
       },
-      // translate: {
-      //   '1.5-full': '-150%',
-      //   '2.5-full': '-200%',
-      //   '1/7': '14.2857143%'
-      // }
+      transitionProperty: {
+        'width': 'width',
+        // 'transform': 'transform'
+      },
+      backgroundImage: theme => ({
+        'blury-pattern': "url('https://images.hdqwalls.com/wallpapers/bthumb/dark-batman-4k-31.jpg')",
+      }),
+      inset:  {
+        '48%': '48%',
+        '46%': '46%',
+        '-30px': '-30px'
+      },
+      translate: {
+        '-48%': '-48%',
+        '-46%': '-46%'
+      },
+      height: {
+        'h-screen+60': 'calc(100vh + 60px)'
+      },
+      width: {
+        'w-screen+60': 'calc(100vw + 60px)'
+      }
+      
     },
     backgroundColor: theme => ({
       ...theme('colors'),
@@ -27,10 +45,7 @@ module.exports = {
     //   '2.5-full': '-200%',
     //   '1/7': '14.2857143%'
     // }),
-    transitionProperty: {
-      'width': 'width',
-      // 'transform': 'transform'
-    },
+    
     rotate: {
       '-180': '-180deg',
        '-70': '-70deg',

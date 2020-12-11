@@ -45,7 +45,7 @@ const ProgressSteps = () => {
   return (
     <div className="container mx-auto px-6 max-w-screen-xl p-4 flex flex-col justify-center min-h-screen">
       <div className="flex justify-between relative progress-steps-progress-container">
-        <div className={`absolute h-1 top-1/2 left-0 bg-blue-400 w-${width} z-n1 transition ease-in duration-500`}></div>
+        <div className={`absolute h-1 top-1/2 left-0 bg-blue-400 w-${width} z-n1 transition-width ease-in duration-500`}></div>
         {listSteps.map((step) => {
           const { id, value, isActive } = step;
           return (
