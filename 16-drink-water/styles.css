@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* height: 100vh; */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3494e4;
+    color: white;
+}
+
+.cup {
+    height: 330px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #144fc6;
+    border-radius: 0 0 40px 40px;
+    margin: 30px 0;
+    background-color: white;
+    color: #144fc6;
+    overflow: hidden;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    background-color: #6ab3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+.cup.cup-small {
+    width: 50px;
+    height: 95px;
+    border-radius: 0 0 15px 15px;
+    margin-right: 15px;
+    word-break: break-word;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease
+}
+
+.cup.cup-small.full {
+    background-color: #6ab3f8;
+    color: white;
+}

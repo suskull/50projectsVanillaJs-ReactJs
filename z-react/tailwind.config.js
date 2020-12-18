@@ -30,6 +30,9 @@ module.exports = {
       },
       width: {
         'w-screen+60': 'calc(100vw + 60px)'
+      },
+      borderRadius: {
+        '40px': '40px'
       }
       
     },
